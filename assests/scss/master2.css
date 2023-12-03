@@ -1,0 +1,401 @@
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/oswald/Oswald-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: sacramento;
+  src: url(../fonts/sacramento/Sacramento-Regular.ttf);
+}
+.main {
+  background-color: rgb(23, 23, 23);
+  overflow: hidden;
+}
+.main .menu--left {
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 8%;
+}
+.main .menu--left > div > div {
+  height: 450px;
+}
+.main .menu--left > div > div > p {
+  font-family: sacramento;
+  color: #b3b3b3;
+}
+.main .menu--left > div > div > ul > li {
+  height: 20%;
+}
+.main .menu--left > div > div > ul > li:hover > a {
+  letter-spacing: 1px;
+}
+.main .menu--left > div > div > ul > li > a {
+  color: #b3b3b3;
+  transition: 0.4s;
+}
+.main .myphoto > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: myphoto 10s linear alternate infinite;
+  box-shadow: 0 0 0 6px rgba(245, 245, 245, 0.386);
+}
+.main .menu---right {
+  background-color: #111;
+}
+@media screen and (min-width: 1201px) {
+  .main .menu---right {
+    transform: translateX(33%);
+  }
+}
+.main .menu---right > section > .menu--right {
+  height: 70px;
+  background-color: #323232;
+}
+.main .menu---right > section > .menu--right > p {
+  font-family: sacramento;
+}
+.main .menu---right > section > .menu--right > div > input:checked + label {
+  z-index: 2;
+}
+.main .menu---right > section > .menu--right > div > input:checked ~ div {
+  right: 0;
+  z-index: 1;
+}
+.main .menu---right > section > .menu--right > div > div {
+  width: 270px;
+  position: fixed;
+  right: -100%;
+  background-color: black;
+  transition: 0.4s;
+  top: 0;
+  height: 100%;
+}
+.main .menu---right > section > .menu--right > div > div > div > ul > li {
+  height: 20%;
+}
+.main .menu---right > section > .menu--right > div > div > div > ul > li:hover > a {
+  letter-spacing: 1px;
+}
+.main .menu---right > section > .menu--right > div > div > div > ul > li > a {
+  color: #b3b3b3;
+  transition: 0.4s;
+}
+.main .menu---right > section .home-rightside-name > div > h1 {
+  font-family: oswald;
+  color: #b3b3b3;
+  font-size: 45px;
+}
+.main .menu---right > section .home-rightside-name > div > h5 {
+  font-family: poppins;
+  color: #b3b3b3;
+}
+.main .menu---right > section .home-rightside-name > div > p {
+  font-family: poppins;
+  color: #b3b3b3;
+}
+.main .menu---right > section .home-rightside-name > div > div > a {
+  color: #b3b3b3;
+  transition: 0.4s;
+}
+.main .menu---right > section .home-rightside-name > div > div > a:hover {
+  transform: translateY(-8px);
+}
+
+.about {
+  height: 280vh;
+}
+.about > div > div {
+  margin-top: 100px;
+  background-color: none;
+}
+.about > div > div > p {
+  width: 70px;
+  background-color: #323232;
+  color: #8e8e8e;
+  font-family: poppins !important;
+  text-transform: uppercase;
+}
+.about > div > h1 {
+  font-family: oswald !important;
+}
+.about > div > span > p {
+  font-family: poppins;
+}
+.about > div > span > h3 {
+  font-family: oswald;
+}
+.about > div > article {
+  border-bottom: 1px solid #8e8e8e;
+  border-top: 1px solid #8e8e8e;
+}
+.about > div > article > p {
+  font-family: poppins;
+}
+.about > div > section {
+  border-bottom: 1px solid #8e8e8e;
+}
+.about > div > section > div > ul:nth-of-type(1) > li {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 14px;
+}
+.about > div > section > div > ul:nth-of-type(2) > li {
+  font-family: poppins;
+  font-size: 14px;
+}
+.about > div > h2 {
+  font-family: poppins;
+  font-weight: bold;
+}
+.about > div > .skills {
+  background-color: rgba(0, 0, 0, 0.232);
+}
+.about > div > .skills > div > div > p {
+  font-size: 12px;
+}
+.about > div > .skills > div:nth-of-type(2) > div {
+  height: 50px;
+}
+.about > div > .skills > div:nth-of-type(2) > div > p {
+  font-family: poppins;
+  font-size: 12px;
+}
+.about > div > .skills > div:nth-of-type(2) > div:nth-of-type(2) > div > span {
+  height: 2px;
+  position: relative;
+  background-color: #323232;
+}
+.about > div > .skills > div:nth-of-type(2) > div:nth-of-type(2) > div > span::before {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #8e8e8e;
+}
+.about > div > .skills > div:nth-of-type(2) > div:nth-of-type(3) > div > span {
+  height: 2px;
+  position: relative;
+  background-color: #323232;
+}
+.about > div > .skills > div:nth-of-type(2) > div:nth-of-type(3) > div > span::before {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #8e8e8e;
+}
+.about > div > .skills > div:nth-of-type(2) > div > div > span {
+  height: 2px;
+  position: relative;
+  background-color: #323232;
+}
+.about > div > .skills > div:nth-of-type(2) > div > div > span::before {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #8e8e8e;
+}
+.about > div > .skills > div > div {
+  height: 50px;
+}
+.about > div > .skills > div > div > p {
+  font-family: poppins;
+}
+.about > div > .skills > div > div:nth-of-type(2) > div > span {
+  height: 2px;
+  position: relative;
+  background-color: #323232;
+}
+.about > div > .skills > div > div:nth-of-type(2) > div > span::before {
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #8e8e8e;
+}
+.about > div > .skills > div > div:nth-of-type(3) > div > span {
+  height: 2px;
+  position: relative;
+  background-color: #323232;
+}
+.about > div > .skills > div > div:nth-of-type(3) > div > span::before {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #8e8e8e;
+}
+.about > div > .skills > div > div > div > span {
+  height: 2px;
+  position: relative;
+  background-color: #323232;
+}
+.about > div > .skills > div > div > div > span::before {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #8e8e8e;
+}
+
+.service > div {
+  margin-top: 100px;
+  background-color: none;
+}
+.service > div > p {
+  width: 80px;
+  background-color: #323232;
+  color: #8e8e8e;
+  font-family: poppins !important;
+  text-transform: uppercase;
+}
+.service > h1 {
+  font-family: oswald;
+}
+.service > section > div > div {
+  background-color: #323232;
+}
+.service > section > div > div:hover > span > p {
+  background-color: #3c3c3c;
+}
+.service > section > div > div:hover > div > a {
+  left: 15px;
+}
+.service > section > div > div:hover > div > span {
+  left: 111px;
+}
+.service > section > div > div > span > p {
+  font-family: poppins;
+  border-radius: 50%;
+  background-color: #383838;
+  width: 55px;
+  height: 55px;
+}
+.service > section > div > div > p {
+  font-family: poppins;
+}
+.service > section > div > div > h4 {
+  font-family: oswald;
+}
+.service > section > div > div > div {
+  position: relative;
+  height: 60px;
+}
+.service > section > div > div > div > a {
+  position: absolute;
+  left: -100%;
+  font-family: poppins;
+  transition: 0.4s;
+  transition-delay: 0.1s;
+}
+.service > section > div > div > div > span {
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  left: 5%;
+  transition: 0.4s;
+}
+
+.contact {
+  height: 100vh;
+}
+.contact > div {
+  margin-top: 100px;
+  background-color: none;
+}
+.contact > div > p {
+  width: 90px;
+  background-color: #323232;
+  color: #8e8e8e;
+  font-family: poppins !important;
+  text-transform: uppercase;
+}
+.contact > section > button {
+  font-family: poppins;
+  padding: 15px 30px;
+  transition: 0.4s;
+}
+.contact > section > button:hover {
+  letter-spacing: 2px;
+}
+.contact > section > input {
+  height: 40px;
+}
+.contact > section > input::-moz-placeholder {
+  font-family: poppins;
+  text-transform: capitalize;
+}
+.contact > section > input::placeholder {
+  font-family: poppins;
+  text-transform: capitalize;
+}
+.contact > section > textarea::-moz-placeholder {
+  font-family: poppins;
+  text-transform: capitalize;
+}
+.contact > section > textarea::placeholder {
+  font-family: poppins;
+  text-transform: capitalize;
+}
+.contact > h1 {
+  font-family: oswald;
+}
+
+.projects > h1 {
+  font-family: oswald;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.projects > div > figure {
+  height: 200px;
+}
+.projects > div > figure:hover > figcaption {
+  top: 50%;
+  opacity: 1;
+}
+.projects > div > figure:hover > a > img {
+  filter: none;
+}
+.projects > div > figure > a > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(70%);
+  transition: 0.4s;
+}
+.projects > div > figure > figcaption {
+  font-family: poppins;
+  top: 150%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+@keyframes myphoto {
+  0% {
+    border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
+  }
+}/*# sourceMappingURL=master2.css.map */

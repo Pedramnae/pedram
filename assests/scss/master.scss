@@ -1,0 +1,135 @@
+@font-face {
+    font-family: oswald;
+    src: url(../fonts/oswald/Oswald-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: sacramento;
+    src: url(../fonts/sacramento/Sacramento-Regular.ttf);
+}
+.main{
+    background-color: rgb(23, 23, 23);
+    overflow: hidden;
+    .menu--left{
+        height: 100vh;
+        background-color: black;
+        >div{
+            >div{
+                height: 450px;
+                >p{
+                    font-family:sacramento ;
+                    color: #b3b3b3;
+                }
+                >ul{
+                    >li{
+                        height: 20%;
+                        &:hover>a{
+                            letter-spacing: 1px;
+                        }
+                        >a{
+                            color: #b3b3b3;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+            }
+            }
+    }
+    .myphoto{
+        >figure{
+            >img{
+                object-fit: cover;
+                animation: myphoto 10s linear alternate infinite;
+                box-shadow: 0 0 0 6px rgba(245, 245, 245, 0.386);
+            }
+        }
+    }
+    .menu---right  {
+        background-color: #111;
+        // border-right: 1px solid #b3b3b3;
+        >section{
+            height: 100vh;
+            >.menu--right{
+                height: 70px;
+                background-color: #323232;
+                >p{
+                    font-family:sacramento ;
+                }
+                >div{
+                    // position: relative;
+                    >input{
+                        &:checked +label{
+                            z-index: 1;
+                        }
+                        &:checked ~div{
+                            right: 0;
+                        }
+                    }
+                    >div{
+                        width: 270px;
+                        position: fixed;
+                        right: -100%;
+                        background-color: black;
+                        transition: 0.4s;
+                        top: 0;
+                        height: 100%;
+                        >div{
+                            >ul{
+                                >li{
+                                    height: 20%;
+                                    &:hover>a{
+                                        letter-spacing: 1px;
+                                    }
+                                    >a{
+                                        color: #b3b3b3;
+                                        transition: 0.4s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .home-rightside-name{
+                >div{
+                    >h1{
+                        font-family: oswald;
+                        color: #b3b3b3;
+                        font-size: 45px;
+                    }
+                    >h5{
+                        font-family: poppins;
+                        color: #b3b3b3;
+                    }
+                    >p{
+                        font-family: poppins;
+                        color: #b3b3b3;
+                    }
+                    >div{
+                        >a{
+                            color: #b3b3b3;
+                            transition: 0.4s;
+                            &:hover{
+                                transform: translateY(-8px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes myphoto {
+    0%{
+        border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
+    }
+}

@@ -1,0 +1,113 @@
+@font-face {
+  font-family: oswald;
+  src: url(../fonts/oswald/Oswald-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: sacramento;
+  src: url(../fonts/sacramento/Sacramento-Regular.ttf);
+}
+.main {
+  background-color: rgb(23, 23, 23);
+  overflow: hidden;
+}
+.main .menu--left {
+  height: 100vh;
+  background-color: black;
+}
+.main .menu--left > div > div {
+  height: 450px;
+}
+.main .menu--left > div > div > p {
+  font-family: sacramento;
+  color: #b3b3b3;
+}
+.main .menu--left > div > div > ul > li {
+  height: 20%;
+}
+.main .menu--left > div > div > ul > li:hover > a {
+  letter-spacing: 1px;
+}
+.main .menu--left > div > div > ul > li > a {
+  color: #b3b3b3;
+  transition: 0.4s;
+}
+.main .myphoto > figure > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: myphoto 10s linear alternate infinite;
+  box-shadow: 0 0 0 6px rgba(245, 245, 245, 0.386);
+}
+.main .menu---right {
+  background-color: #111;
+}
+.main .menu---right > section {
+  height: 100vh;
+}
+.main .menu---right > section > .menu--right {
+  height: 70px;
+  background-color: #323232;
+}
+.main .menu---right > section > .menu--right > p {
+  font-family: sacramento;
+}
+.main .menu---right > section > .menu--right > div > input:checked + label {
+  z-index: 1;
+}
+.main .menu---right > section > .menu--right > div > input:checked ~ div {
+  right: 0;
+}
+.main .menu---right > section > .menu--right > div > div {
+  width: 270px;
+  position: fixed;
+  right: -100%;
+  background-color: black;
+  transition: 0.4s;
+  top: 0;
+  height: 100%;
+}
+.main .menu---right > section > .menu--right > div > div > div > ul > li {
+  height: 20%;
+}
+.main .menu---right > section > .menu--right > div > div > div > ul > li:hover > a {
+  letter-spacing: 1px;
+}
+.main .menu---right > section > .menu--right > div > div > div > ul > li > a {
+  color: #b3b3b3;
+  transition: 0.4s;
+}
+.main .menu---right > section .home-rightside-name > div > h1 {
+  font-family: oswald;
+  color: #b3b3b3;
+  font-size: 45px;
+}
+.main .menu---right > section .home-rightside-name > div > h5 {
+  font-family: poppins;
+  color: #b3b3b3;
+}
+.main .menu---right > section .home-rightside-name > div > p {
+  font-family: poppins;
+  color: #b3b3b3;
+}
+.main .menu---right > section .home-rightside-name > div > div > a {
+  color: #b3b3b3;
+  transition: 0.4s;
+}
+.main .menu---right > section .home-rightside-name > div > div > a:hover {
+  transform: translateY(-8px);
+}
+
+@keyframes myphoto {
+  0% {
+    border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 65% 45% 35% 75%/65% 35% 75% 45%;
+  }
+}/*# sourceMappingURL=master.css.map */
